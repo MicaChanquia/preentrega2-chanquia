@@ -304,9 +304,10 @@ margin-right: 50px;
         height: 10.9375rem;
     }
     .opiniones{
-        width: 80%;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
+        padding: 2%;
     }
     .quienesSomos{
         flex-direction: column;
