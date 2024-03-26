@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 1000px;
+    font-family: "Jacques Francois", serif;
+}
+
+nav ul{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+list-style: none;
+padding-top: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1{
+    color: #8E7AB5;
+    text-align: left;
+    font-size: 2.1875rem;
+    font-weight: bolder;
+}
+
+h2{
+    color: #B784B7;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+h3{
+    color: #8E7AB5;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+h4{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+p{
+    color: #EEA5A6;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+header{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #E493B3;
+    height: 5%;
+}
+
+footer{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #8E7AB5;
+    height: 3%;
+    text-align: center;
+}
+
+.opiniones{
+    display: flex;
+    flex-direction: row;
+}
+
+.opiniones div p{
+    color:#8E7AB5;
+    background-color: #d3a9aa;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.inicio{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 50px;
+    background-image: url("../assets/Fondo.png");
+    height: 25rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.tituloCentrado{
+    text-align: center;
+}
+
+button{
+    background-color: #E493B3;
+    padding: 5px 10px;
+    border: #E493B3;
+    border-radius: 5px;
+}
+
+.fondoRosa{
+    padding: 40px;
+    background-color: #EEA5A6;
+    margin: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.fondoVioleta{
+    padding: 10px;
+    background-color: #B784B7;
+    border-radius: 10px;
+}
+
+.fondoVioleta h2{
+    color: #FFFFFF;
+}
+
+.fondoVioleta img{
+    width: 40px;
+    height: 40px;
+}
+
+.fondoVioleta div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+form{
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+form li{
+    margin-bottom: 25px;
+}
+
+.destino1{
+    grid-area: destino1;
+}
+.destino2{
+    grid-area: destino2;
+}
+.destino3{
+    grid-area: destino3;
+}
+.destino4{
+    grid-area: destino4;
+}
+.destino5{
+    grid-area: destino5;
+}
+.destino6{
+    grid-area: destino6;
+}
+
+.nuestrosUltimosViajes{
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: repeat(6fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "destino1 destino2 destino3 destino4 destino5 destino6"
+    ;
+    align-items: center;
+    gap: 5px;
+}
+
+.nuestrosUltimosViajes img{
+width: 12.5rem;
+height: 12.5rem;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quienesSomos p{
+    width: 90%;
+    margin-top: 10px;
+}
+
+.quienesSomos img{
+margin-top: 50px;
+margin-right: 50px;
+}
+
+.equipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.equipo p{
+    color:#8E7AB5;
+}
+
+.equipo img{
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.equipo div{
+    padding: 50px 100px;
+}
+
+.viaje{
+    display: flex;
+    margin-top: 40px;
+}
+
+.viaje img{
+    width: 300px;
+    height: 250px;
+    margin: 10px 20px;
+}
+
+.viaje h3{
+    margin: 30px 0px 30px;
+}
+
+.mediosDePago{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.fotosMediosDePago div{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.fotosMediosDePago img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.totalMediosDePago{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.descuento{
+    text-align: center;
+}
+
+.bancos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.bancos img{
+    width: 14.0625rem;
+    height: 6.25rem;
+}
+
+@media (max-width: 744px) {
+    header{
+        height: 15%;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .inicio{
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .nuestrosUltimosViajes{
+        grid-template-columns: (3,1fr);
+        grid-template-rows: (2,1fr);
+        grid-template-areas: 
+        "destino1 destino2 destino3"
+        "destino4 destino5 destino6"
+        ;
+        align-content: center;
+    }
+    .nuestrosUltimosViajes img{
+        width: 10.9375rem
+        height: 10.9375rem;
+    }
+    .opiniones{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:320px){
+    header{
+        height: 12%;
+        font-size: .9375rem;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .inicio{
+        height: 8.75rem;
+        align-items: flex-start;
+        padding-top: 10px;
+
+    }
+    .inicio h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    .nuestrosUltimosViajes{
+        grid-template-columns: (2,1fr);
+        grid-template-rows: (3,1fr);
+        grid-template-areas: 
+        "destino1 destino2"
+        "destino3 destino4"
+        "destino5 destino6"
+        ;
+        align-content: center;
+    }
+    .nuestrosUltimosViajes img{
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+    .opiniones p{
+        font-size: .75rem;
+    }
+    footer{
+        font-size: .9375rem;
+    }
+}
