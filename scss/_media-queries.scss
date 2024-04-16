@@ -1,0 +1,84 @@
+@media (max-width: 850px) {
+    .quienesSomos {
+      flex-direction: column;
+    }
+    .quienesSomos img {
+      width: 60%;
+      height: 60%;
+    }
+    .viaje{
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+@media (max-width: 744px) {
+    .nuestrosUltimosViajes {
+      grid-template-columns: (2, 1fr);
+      grid-template-rows: (3, 1fr);
+      grid-template-areas:
+          "destino1 destino2"
+          "destino3 destino4"
+          "destino5 destino6";
+  }
+    header {
+      height: 15%;
+      font-size: 1rem;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    .inicio {
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+    .inicio h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .opiniones {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2%;
+    }
+    footer {
+      font-size: 1rem;
+    }
+  }
+
+@media (max-width: 325px) {
+    header {
+      height: 12%;
+      font-size: .9375rem;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    .inicio {
+      padding-top: 10px;
+    }
+    .inicio h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    .opiniones p {
+      font-size: 0.75rem;
+    }
+    footer {
+      font-size: .9375rem;
+    }
+    .quienesSomos {
+      flex-direction: column;
+    }
+    .quienesSomos h1 {
+      font-size: 1.25rem;
+    }
+    .quienesSomos p {
+      font-size: 0.75rem;
+    }
+}

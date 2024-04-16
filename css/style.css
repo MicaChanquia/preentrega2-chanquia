@@ -13,51 +13,6 @@ body {
   font-family: "Jacques Francois", serif;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  padding-top: 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-h1 {
-  color: #8e7ab5;
-  text-align: left;
-  font-size: 2.1875rem;
-  font-weight: bolder;
-}
-
-h2 {
-  color: #b784b7;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 20px 0px;
-}
-
-h3 {
-  color: #8e7ab5;
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-h4 {
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-p {
-  color: #eea5a6;
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
 header {
   color: #ffffff;
   font-size: 1.25rem;
@@ -65,6 +20,46 @@ header {
   background-color: #e493b3;
   height: 5%;
   width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+main h1 {
+  color: #8e7ab5;
+  text-align: left;
+  font-size: 2.1875rem;
+  font-weight: bolder;
+}
+main h2 {
+  color: #b784b7;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+main h3 {
+  color: #8e7ab5;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+main h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+main p {
+  color: #eb8d8f;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 footer {
@@ -81,19 +76,8 @@ footer {
   text-align: center;
 }
 
-.opiniones {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.opiniones div p {
-  color: #8e7ab5;
-  background-color: #d3a9aa;
-  padding: 5px;
-  border-radius: 5px;
-  margin: 10px;
-  width: 95%;
+.tituloCentrado {
+  text-align: center;
 }
 
 .inicio {
@@ -108,8 +92,122 @@ footer {
   background-size: cover;
 }
 
-.tituloCentrado {
-  text-align: center;
+.destino1 {
+  grid-area: destino1;
+}
+
+.destino2 {
+  grid-area: destino2;
+}
+
+.destino3 {
+  grid-area: destino3;
+}
+
+.destino4 {
+  grid-area: destino4;
+}
+
+.destino5 {
+  grid-area: destino5;
+}
+
+.destino6 {
+  grid-area: destino6;
+}
+
+.nuestrosUltimosViajes {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-template-areas: "destino1 destino2 destino3" "destino4 destino5 destino6";
+}
+.nuestrosUltimosViajes img {
+  width: 80%;
+  height: 80%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.opiniones {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.opiniones div p {
+  color: #8e7ab5;
+  background-color: #d3a9aa;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 95%;
+}
+
+.quienesSomos {
+  height: 60%;
+  display: flex;
+}
+.quienesSomos p {
+  width: 90%;
+  margin-top: 10px;
+}
+.quienesSomos img {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.persona1 {
+  grid-area: persona1;
+}
+
+.persona2 {
+  grid-area: persona2;
+}
+
+.persona3 {
+  grid-area: persona3;
+}
+
+.persona4 {
+  grid-area: persona4;
+}
+
+.equipo {
+  display: grid;
+  padding: 0 20%;
+  width: 100%;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 2, 1fr;
+  grid-template-areas: "persona1 persona2" "persona3 persona4";
+}
+.equipo p {
+  color: #8e7ab5;
+}
+.equipo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10%;
+}
+.equipo img {
+  width: 70%;
+  height: 70%;
+}
+
+.viaje {
+  display: flex;
+  margin-top: 40px;
+}
+.viaje img {
+  width: 250px;
+  height: 200px;
+  margin: 10px 20px;
+}
+.viaje h3 {
+  margin: 30px 0px 30px;
 }
 
 button {
@@ -119,157 +217,14 @@ button {
   border-radius: 5px;
 }
 
-.fondoRosa {
-  padding: 40px;
-  background-color: #eea5a6;
-  margin: 30px;
-  border-radius: 5px;
+.mediosDePago {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.fondoVioleta {
-  padding: 10px;
-  background-color: #b784b7;
-  border-radius: 10px;
-}
-
-.fondoVioleta h2 {
-  color: #ffffff;
-}
-
-.fondoVioleta img {
-  width: 40px;
-  height: 40px;
-}
-
-.fondoVioleta div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-form {
-  color: #ffffff;
   padding: 20px;
 }
 
-form li {
-  margin-bottom: 25px;
-}
-
-.destino1 {
-  grid-area: destino1;
-}
-.destino2 {
-  grid-area: destino2;
-}
-.destino3 {
-  grid-area: destino3;
-}
-.destino4 {
-  grid-area: destino4;
-}
-.destino5 {
-  grid-area: destino5;
-}
-.destino6 {
-  grid-area: destino6;
-}
-
-.nuestrosUltimosViajes {
-  display: grid;
-  width: 100%;
-  grid-template-columns: (3, 1fr);
-  grid-template-rows: (2, 1fr);
-  grid-template-areas:
-    "destino1 destino2 destino3"
-    "destino4 destino5 destino6";
-  gap: 5px;
-}
-
-.nuestrosUltimosViajes img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-}
-
-.quienesSomos {
-  height: 60%;
-  display: flex;
-}
-
-.quienesSomos p {
-  width: 90%;
-  margin-top: 10px;
-}
-
-.quienesSomos img {
-  margin-top: 50px;
-  margin-right: 50px;
-}
-
-.persona1{
-    grid-area: persona1;
-}
-.persona2{
-    grid-area: persona2;
-}
-.persona3{
-    grid-area: persona3;
-}
-.persona4{
-    grid-area: persona4;
-}
-
-.equipo {
-  display: grid;
-  padding: 0 20%;
-  width: 100%;
-  grid-template-columns: (2, 1fr);
-  grid-template-rows: (2, 1fr);
-  grid-template-areas: 
-  "persona1 persona2"
-  "persona3 persona4";
-}
-
-.equipo p {
-  color: #8e7ab5;
-}
-
-.equipo div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10%;
-}
-
-.equipo img{
-  width: 70%;
-  height: 70%;
-}
-
-.viaje {
-  display: flex;
-  margin-top: 40px;
-}
-
-.viaje img {
-  width: 250px;
-  height: 200px;
-  margin: 10px 20px;
-}
-
-.viaje h3 {
-  margin: 30px 0px 30px;
-}
-
-.mediosDePago {
+.totalMediosDePago {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -288,13 +243,6 @@ form li {
   margin: 10px;
 }
 
-.totalMediosDePago {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 20px;
-}
-
 .descuento {
   text-align: center;
 }
@@ -305,10 +253,47 @@ form li {
   justify-content: space-around;
   padding: 20px;
 }
-
 .bancos img {
   width: 14.0625rem;
   height: 6.25rem;
+}
+
+.fondoRosa {
+  padding: 40px;
+  background-color: #eea5a6;
+  margin: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fondoVioleta {
+  padding: 10px;
+  background-color: #b784b7;
+  border-radius: 10px;
+}
+.fondoVioleta h2 {
+  color: #ffffff;
+}
+.fondoVioleta img {
+  width: 40px;
+  height: 40px;
+}
+.fondoVioleta div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  color: #ffffff;
+  padding: 20px;
+}
+form li {
+  margin-bottom: 25px;
 }
 
 @media (max-width: 850px) {
@@ -319,20 +304,17 @@ form li {
     width: 60%;
     height: 60%;
   }
-  .viaje{
+  .viaje {
     flex-direction: column;
     align-items: center;
   }
 }
 @media (max-width: 744px) {
-.nuestrosUltimosViajes {
-    grid-template-columns: (2, 1fr);
-    grid-template-rows: (3, 1fr);
-    grid-template-areas:
-        "destino1 destino2"
-        "destino3 destino4"
-        "destino5 destino6";
-}
+  .nuestrosUltimosViajes {
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 3, 1fr;
+    grid-template-areas: "destino1 destino2" "destino3 destino4" "destino5 destino6";
+  }
   header {
     height: 15%;
     font-size: 1rem;
@@ -363,7 +345,7 @@ form li {
 @media (max-width: 325px) {
   header {
     height: 12%;
-    font-size: .9375rem;
+    font-size: 0.9375rem;
   }
   nav ul {
     flex-direction: column;
@@ -381,7 +363,7 @@ form li {
     font-size: 0.75rem;
   }
   footer {
-    font-size: .9375rem;
+    font-size: 0.9375rem;
   }
   .quienesSomos {
     flex-direction: column;
@@ -394,3 +376,4 @@ form li {
   }
 }
 
+/*# sourceMappingURL=style.css.map */

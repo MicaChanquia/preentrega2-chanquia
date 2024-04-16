@@ -1,0 +1,50 @@
+.quienesSomos {
+    height: 60%;
+    display: flex;
+    p {
+        width: 90%;
+        margin-top: 10px;
+    }
+    img {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+}
+
+.persona1{
+    grid-area: persona1;
+}
+.persona2{
+    grid-area: persona2;
+}
+.persona3{
+    grid-area: persona3;
+}
+.persona4{
+    grid-area: persona4;
+}
+
+.equipo {
+    display: grid;
+    padding: 0 20%;
+    width: 100%;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-template-areas: 
+    "persona1 persona2"
+    "persona3 persona4";
+    p {
+        color: #8e7ab5;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10%;
+    }
+    img{
+        width: 70%;
+        height: 70%;
+    }
+}

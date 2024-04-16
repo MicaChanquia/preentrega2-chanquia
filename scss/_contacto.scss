@@ -1,0 +1,36 @@
+.fondoRosa {
+    padding: 40px;
+    background-color: #eea5a6;
+    margin: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.fondoVioleta {
+    padding: 10px;
+    background-color: #b784b7;
+    border-radius: 10px;
+    h2 {
+        color: #ffffff;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+form {
+    color: #ffffff;
+    padding: 20px;
+    li {
+        margin-bottom: 25px;
+    }
+}

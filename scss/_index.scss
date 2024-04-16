@@ -1,0 +1,60 @@
+.inicio {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 50px;
+    background-image: url("../assets/Fondo.png");
+    height: 25rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.destino1 {
+    grid-area: destino1;
+}
+.destino2 {
+    grid-area: destino2;
+}
+.destino3 {
+    grid-area: destino3;
+}
+.destino4 {
+    grid-area: destino4;
+}
+.destino5 {
+    grid-area: destino5;
+}
+.destino6 {
+    grid-area: destino6;
+}
+.nuestrosUltimosViajes {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-template-areas:
+    "destino1 destino2 destino3"
+    "destino4 destino5 destino6";
+    img {
+        width: 80%;
+        height: 80%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}
+
+.opiniones {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    div p {
+        color: #8e7ab5;
+        background-color: #d3a9aa;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 10px;
+        width: 95%;
+    }
+}
