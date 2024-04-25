@@ -1,10 +1,20 @@
+@media (max-width: 950px){
+  .fondoRosa{
+    width: 80%;
+    flex-direction: column;
+    }
+  .fondoVioleta{
+    margin: 20px;
+  }
+}
+
 @media (max-width: 850px) {
     .quienesSomos {
       flex-direction: column;
-    }
-    .quienesSomos img {
-      width: 60%;
-      height: 60%;
+      img {
+        width: 60%;
+        height: 60%;
+      }
     }
     .viaje{
       flex-direction: column;
@@ -25,16 +35,36 @@
       height: 15%;
       font-size: 1rem;
     }
-    nav ul {
-      flex-direction: column;
+
+    nav {
+      .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        top: 0;
+      }
+      ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        }
+    label{
+      display: inline-flex;
+      cursor: pointer;
     }
+    #toggle:checked ~ .menu{
+      height: 100%;
+    }
+  }
+
     .inicio {
       align-items: flex-start;
       padding-top: 20px;
+      h1 {
+        font-size: 1.5rem;
+      }
     }
-    .inicio h1 {
-      font-size: 1.5rem;
-    }
+
     h2 {
       font-size: 1.5rem;
     }
@@ -49,36 +79,66 @@
     }
   }
 
+@media (max-width: 500px) {
+  .fondoRosa{
+    padding: 20px;
+  }
+  .fondoVioleta{
+    h4{
+      font-size: .75rem;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+    }
+    form{
+      font-size: .75rem;
+    }
+  }
+}
+
+@media (max-width: 420px){
+  .nuestrosUltimosViajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+      width: 60%;
+      height: 60%;
+      margin: 10px;
+    }
+  }
+  .fondoRosa {
+    padding: 10px;
+  }
+  .fondoVioleta{
+    h4{
+      font-size: .625rem;
+    }
+    form{
+      font-size: .625rem;
+    }
+  }
+}
+
 @media (max-width: 325px) {
     header {
-      height: 12%;
-      font-size: .9375rem;
-    }
-    nav ul {
-      flex-direction: column;
+      width: 100%;
+      height: 5%;
     }
     .inicio {
       padding-top: 10px;
-    }
-    .inicio h1 {
-      font-size: 1.5rem;
+      h1 {
+        font-size: 1.5rem;
+      }
     }
     h2 {
       font-size: 1rem;
-    }
-    .opiniones p {
-      font-size: 0.75rem;
     }
     footer {
       font-size: .9375rem;
     }
     .quienesSomos {
       flex-direction: column;
-    }
-    .quienesSomos h1 {
-      font-size: 1.25rem;
-    }
-    .quienesSomos p {
-      font-size: 0.75rem;
     }
 }
