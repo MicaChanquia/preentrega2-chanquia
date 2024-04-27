@@ -155,10 +155,11 @@ button a:hover {
   grid-template-areas: "destino1 destino2 destino3" "destino4 destino5 destino6";
 }
 .nuestrosUltimosViajes img {
-  width: 80%;
+  width: 100%;
   height: 80%;
   aspect-ratio: 1/1;
   object-fit: cover;
+  padding: 5%;
 }
 .nuestrosUltimosViajes img:hover {
   transform: scale(1.1);
@@ -188,8 +189,10 @@ button a:hover {
   margin-top: 10px;
 }
 .quienesSomos img {
+  width: 100%;
   margin-top: 50px;
   margin-right: 50px;
+  aspect-ratio: 1/1;
 }
 
 .persona1 {
@@ -236,9 +239,9 @@ button a:hover {
   margin-top: 40px;
 }
 .viaje img {
-  width: 250px;
-  height: 200px;
-  margin: 10px 20px;
+  width: 100%;
+  height: 60%;
+  padding: 5%;
 }
 .viaje img:hover {
   transform: scale(1.1);
@@ -249,29 +252,60 @@ button a:hover {
 }
 
 .mediosDePago {
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  grid-template-areas: "tarjetasDeCreditoYDebito efectivo transferencia";
+  text-align: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.tarjetasDeCreditoYDebito {
+  grid-area: tarjetasDeCreditoYDebito;
+  display: flex;
+  flex-direction: column;
+}
+.tarjetasDeCreditoYDebito img {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+}
+.tarjetasDeCreditoYDebito .fotosTarjetasDeCreditoYDebito {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px;
 }
 
-.totalMediosDePago {
+.efectivo {
+  grid-area: efectivo;
+  display: flex;
+  flex-direction: column;
+}
+.efectivo img {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+}
+.efectivo .fotosEfectivo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px;
 }
 
-.fotosMediosDePago div {
+.transferencia {
+  grid-area: transferencia;
+  display: flex;
+  flex-direction: column;
+}
+.transferencia img {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+}
+.transferencia .fotosTransferencia {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.fotosMediosDePago img {
-  width: 25%;
-  height: 65%;
-  margin: 15px;
+  justify-content: space-around;
 }
 
 .descuento {
@@ -282,11 +316,11 @@ button a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px;
+  margin: 5%;
 }
 .bancos img {
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: 30%;
 }
 
 .fondoRosa {
@@ -395,6 +429,10 @@ form li {
     justify-content: center;
     padding: 2%;
   }
+  .mediosDePago {
+    display: flex;
+    flex-direction: column;
+  }
   footer {
     font-size: 1rem;
   }
@@ -449,11 +487,36 @@ form li {
   h2 {
     font-size: 1rem;
   }
-  footer {
-    font-size: 0.9375rem;
-  }
   .quienesSomos {
     flex-direction: column;
+  }
+  .mediosDePago {
+    margin: 5%;
+  }
+  .mediosDePago img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+  .mediosDePago .fotosTarjetasDeCreditoYDebito {
+    flex-direction: column;
+  }
+  .mediosDePago .fotosEfectivo {
+    flex-direction: column;
+  }
+  .mediosDePago .fotosTransferencia {
+    flex-direction: column;
+  }
+  .bancos {
+    flex-direction: column;
+  }
+  .bancos img {
+    width: 100%;
+    object-fit: contain;
+    margin: 5%;
+  }
+  footer {
+    font-size: 0.9375rem;
   }
 }
 

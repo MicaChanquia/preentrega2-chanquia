@@ -1,26 +1,59 @@
-.mediosDePago {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
+.mediosDePago{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-areas: 
+    "tarjetasDeCreditoYDebito efectivo transferencia";
+    text-align: center;
+    align-items: center;
+    margin: 5%;
 }
 
-.totalMediosDePago {
+.tarjetasDeCreditoYDebito{
+    grid-area: tarjetasDeCreditoYDebito;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
+    flex-direction: column;
+    img{
+        width: 30%;
+        height: 30%;
+        object-fit: contain;
+    }
+    .fotosTarjetasDeCreditoYDebito{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
-.fotosMediosDePago div {
+.efectivo{
+    grid-area: efectivo;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 30%;
+        height: 30%;
+        object-fit: contain;
+    }
+    .fotosEfectivo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
-.fotosMediosDePago img {
-    width: 25%;
-    height: 65%;
-    margin: 15px;
+
+.transferencia{
+    grid-area: transferencia;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 30%;
+        height: 30%;
+        object-fit: contain;
+    }
+    .fotosTransferencia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .descuento {
@@ -31,9 +64,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 20px;
     img {
-        width: 20%;
-        height: 20%;
+        width: 30%;
+        height: 30%;
     }
+    margin: 5%;
 }
