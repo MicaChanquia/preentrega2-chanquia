@@ -39,10 +39,9 @@
         color: #8e7ab5;
     }
     div{
+        @include flex(column, center);
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
         padding: 10%;
     }
     img{

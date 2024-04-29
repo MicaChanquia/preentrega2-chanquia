@@ -103,9 +103,7 @@
 
 @media (max-width: 420px){
   .nuestrosUltimosViajes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center);
     img{
       width: 60%;
       height: 60%;

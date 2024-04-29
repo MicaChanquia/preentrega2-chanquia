@@ -3,7 +3,35 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+$colores:(
+  opiniones: #8e7ab5,
+  header: #ffffff,
+  parrafo: #eb8d8f,
+  hover: #7a60af,
+  visited: purple,
+  footer: #ffffff,
+  form: #ffffff,
+  tituloPrincipal: #8e7ab5,
+  tituloSecundario: #b784b7,
+  buttom: white,
+);
+
+$fuentes:(
+  header: 1.25rem,
+  tituloPrincipal: 2.25rem,
+  tituloSecundario: 2rem,
+  parrafo: 1rem,
+  nombres: 1.25rem,
+  footer: 1.25rem,
+);
+
+@mixin flex($direction, $justify){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -14,8 +42,7 @@ body {
 }
 
 header {
-  color: #ffffff;
-  font-size: 1.25rem;
+  font-size: map-get($fuentes, header);
   font-weight: bold;
   background-color: #e493b3;
   height: 5%;
@@ -24,22 +51,22 @@ header {
 
   nav {
     ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex(row, space-around);
     list-style: none;
     padding-top: 10px;
-    li a {
-      text-decoration: none;
-      color: #ffffff;
-    }
-    li a:hover{
-      color: #7a60af;
-      text-decoration: underline;
-    }
-    li a:visited{
-      color: purple;
-    }
+      li{
+        a{
+          text-decoration: none;
+          color: map-get($colores, header);
+          &:hover{
+            color: map-get($colores, hover);
+            text-decoration: underline;
+          }
+          &:visited{
+            color: map-get($colores, visited);
+          }
+        }
+      }
   }
   .nav-wrapper{
     width: 100%;
@@ -53,14 +80,14 @@ header {
 
   main {
   h1 {
-    color: #8e7ab5;
+    color: map-get($colores, tituloPrincipal);
     text-align: left;
-    font-size: 2.1875rem;
+    font-size: map-get($fuentes, tituloPrincipal);
     font-weight: bolder;
   }
   h2 {
-    color: #b784b7;
-    font-size: 30px;
+    color: map-get($colores, tituloSecundario);
+    font-size: map-get($fuentes, tituloSecundario);
     font-weight: bold;
     margin: 20px 0px;
   }
@@ -75,8 +102,8 @@ header {
     font-weight: lighter;
   }
   p {
-    color: #eb8d8f;
-    font-size: 1rem;
+    color: map-get($colores, parrafo);
+    font-size: map-get($fuentes, parrafo);
     font-weight: lighter;
   }
 }
@@ -86,8 +113,8 @@ footer {
   justify-content: center;
   align-items: center;
   bottom: 0;
-  color: #ffffff;
-  font-size: 1.25rem;
+  color: map-get($colores, footer);
+  font-size: map-get($fuentes, footer);
   font-weight: bold;
   background-color: #8e7ab5;
   height: 10vh;
@@ -107,9 +134,9 @@ button {
   margin-bottom: 5px;
   a{
       text-decoration: none;
-      color: white;
-  }
-  a:hover{
-      color: purple;
+      color: map-get($colores, buttom);
+      &:hover{
+        color: map-get($colores, hover);
+      }
   }
 }

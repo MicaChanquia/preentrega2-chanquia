@@ -3,9 +3,7 @@
     background-color: #eea5a6;
     margin: 30px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex(row, space-around);
 }
 .fondoVioleta {
     padding: 10px;
@@ -20,16 +18,14 @@
         height: 35px;
     }
     div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex(row, center);
         align-items: center;
         padding: 10px;
     }
 }
 
 form {
-    color: #ffffff;
+    color: map-get($colores, form);
     padding: 20px;
     li {
         margin-bottom: 25px;

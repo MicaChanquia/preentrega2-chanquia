@@ -14,7 +14,6 @@ body {
 }
 
 header {
-  color: #ffffff;
   font-size: 1.25rem;
   font-weight: bold;
   background-color: #e493b3;
@@ -52,12 +51,12 @@ nav #toggle, nav label {
 main h1 {
   color: #8e7ab5;
   text-align: left;
-  font-size: 2.1875rem;
+  font-size: 2.25rem;
   font-weight: bolder;
 }
 main h2 {
   color: #b784b7;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   margin: 20px 0px;
 }
@@ -107,11 +106,10 @@ button a {
   color: white;
 }
 button a:hover {
-  color: purple;
+  color: #7a60af;
 }
 
 .inicio {
-  font-size: 2.5rem;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -224,9 +222,10 @@ button a:hover {
 }
 .equipo div {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   padding: 10%;
 }
 .equipo img {
@@ -236,12 +235,12 @@ button a:hover {
 
 .viaje {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .viaje img {
-  width: 100%;
-  height: 60%;
-  padding: 5%;
+  width: 90%;
+  aspect-ratio: 1/1;
+  margin: 2%;
 }
 .viaje img:hover {
   transform: scale(1.1);
@@ -270,7 +269,7 @@ button a:hover {
   height: 30%;
   object-fit: contain;
 }
-.tarjetasDeCreditoYDebito .fotosTarjetasDeCreditoYDebito {
+.tarjetasDeCreditoYDebito .fotosTarjetasDeCreditoYDebito, .tarjetasDeCreditoYDebito .bancos, .tarjetasDeCreditoYDebito .transferencia .fotosTransferencia, .transferencia .tarjetasDeCreditoYDebito .fotosTransferencia, .tarjetasDeCreditoYDebito .efectivo .fotosEfectivo, .efectivo .tarjetasDeCreditoYDebito .fotosEfectivo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -286,12 +285,6 @@ button a:hover {
   height: 30%;
   object-fit: contain;
 }
-.efectivo .fotosEfectivo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .transferencia {
   grid-area: transferencia;
   display: flex;
@@ -302,20 +295,11 @@ button a:hover {
   height: 30%;
   object-fit: contain;
 }
-.transferencia .fotosTransferencia {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .descuento {
   text-align: center;
 }
 
 .bancos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   margin: 5%;
 }
 .bancos img {
@@ -498,7 +482,7 @@ form li {
     aspect-ratio: 1/1;
     object-fit: contain;
   }
-  .mediosDePago .fotosTarjetasDeCreditoYDebito {
+  .mediosDePago .fotosTarjetasDeCreditoYDebito, .mediosDePago .efectivo .fotosEfectivo, .efectivo .mediosDePago .fotosEfectivo, .mediosDePago .transferencia .fotosTransferencia, .transferencia .mediosDePago .fotosTransferencia, .mediosDePago .bancos {
     flex-direction: column;
   }
   .mediosDePago .fotosEfectivo {
